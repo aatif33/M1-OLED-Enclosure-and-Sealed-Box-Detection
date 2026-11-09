@@ -1,43 +1,23 @@
 # M1 — OLED Enclosure + Sealed Box Detection
 
-Milestone: **M1 — Detect**
+**Milestone:** M1 — Detect  
+**Package type:** Planning/demo assets and evidence organization starter.
 
-This repository collects the six M1 assessment workstreams:
-1. Camera and repository
-2. OpenCV pipeline
-3. Baseline speed
-4. Dataset v1
-5. Correct dataset split
-6. Train and run detector
+This repository is organized around the six M1 assessment criteria. The included annotated screenshots are references supplied for this project. Other generated visuals are clearly marked as concepts/templates, not measurements or completed experiments.
 
-## Project scope
-- OLED enclosure camera setup and visual inspection evidence.
-- Sealed/opened box detection dataset and detector work.
-- Keep evidence for each workstream in its corresponding folder.
+## M1 criteria
+1. `01_camera_and_repo/` — camera setup, specification, first frame, repository history.
+2. `02_opencv_pipeline/` — live OpenCV pipeline and detection overlay.
+3. `03_baseline_speed/` — measured FPS, latency, CPU/accelerator utilization and temperature.
+4. `04_dataset_v1/` — labelled dataset and data card.
+5. `05_correct_split/` — 70/20/10 split and leakage checks.
+6. `06_train_and_run_detector/` — model training, mAP@0.5, precision, recall, confusion matrix and error review.
 
-> Important: replace placeholders with measurements and outputs captured on your own device. Do not report estimated or example values as measured results.
+## Important evidence status
+- Supplied screenshots are reference screenshots, not newly captured by this package.
+- Dashboard and dataset/validation visuals in `demo_only/` are illustrative mockups.
+- No benchmark values, dataset counts, training metrics, or hardware test results are asserted by this package.
+- Replace all placeholders with genuine outputs before presenting the criteria as completed.
 
-## Quick start
-```bash
-python -m venv .venv
-# Linux / Raspberry Pi:
-source .venv/bin/activate
-# Windows PowerShell:
-# .venv\Scripts\Activate.ps1
-
-pip install -r requirements.txt
-python 01_camera_and_repo/camera_test.py
-python 01_camera_and_repo/capture_frame.py
-```
-
-## Evidence checklist
-- [ ] Camera model/specification and physical setup recorded
-- [ ] First raw frame captured on target device
-- [ ] Live OpenCV pipeline demonstrated
-- [ ] Baseline FPS, latency, CPU, accelerator (if available), and temperature measured
-- [ ] Dataset v1 labelled and data card completed
-- [ ] 70/20/10 split verified with no leakage
-- [ ] Detector metrics, confusion matrix, and 10 error examples documented
-
-## Reproducibility
-Record device model, OS, Python/OpenCV versions, camera index, image dimensions, model weights, commands, and date for every run.
+## Project terminology
+The enclosure target is the OLED display enclosure. The sealed/opened box detector is a separate workstream. Keep class labels and datasets distinct; do not relabel one model's detections as the other.

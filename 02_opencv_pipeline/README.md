@@ -1,10 +1,3 @@
 # OpenCV pipeline
 
-`main.py` currently proves camera streaming and a live telemetry overlay. It does **not** perform object detection yet.
-
-Integrate the actual trained enclosure detector and sealed/opened-box detector here when their model weights and class mapping are confirmed. Keep the raw camera preview and detector output as separate evidence where possible.
-
-Run:
-```bash
-python 02_opencv_pipeline/main.py --camera 0
-```
+The screenshot in `evidence/` is a supplied reference image. For final evidence, capture a fresh live run from the target device and preserve the original output. Document the actual model/class mapping and runtime settings.
