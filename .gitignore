@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+runs/
+*.pt
+*.onnx
+# Keep evidence images intentionally; ignore only temporary captures:
+01_camera_and_repo/evidence/tmp_*

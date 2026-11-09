@@ -1,0 +1,9 @@
+# Replace paths and class names to match the final labelled dataset.
+path: .
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: TODO_class_0
+  1: TODO_class_1
